@@ -308,6 +308,8 @@ footer p {
         width: 1000px;
         height: 1000px;
     }
+
+    
 }
 
 /* Adjust positioning / sizing of project type overlay cards */
@@ -329,6 +331,14 @@ footer p {
 
     h1 {
         font-size: 28pt;
+    }
+
+    .contact-links {
+        display: block;
+    }
+
+    .contact-items {
+        margin-bottom: 20px;
     }
 
 }

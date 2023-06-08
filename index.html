@@ -9,46 +9,94 @@
     <title>Katy Thompson - Portfolio</title>
 </head>
 <body>
-    <!-- Nav Links on top then Header Image below -->
-    <header>
+    <!-- Radial Gradient Backgrounds -->
+    <div class="radial-gradient" id="gradient1"></div>
+    <div class="radial-gradient" id="gradient2"></div>
+    <div class="radial-gradient" id="gradient3"></div>
+    <!-- Page Content Container -->
+    <div id="body-container">
+        <!-- Nav Links on top then Header Image below -->
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="work">Work</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div id="header-image">
-
-        </div>
-    </header>
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ratione suscipit necessitatibus sunt, corporis velit quae neque possimus voluptates maxime quos eius incidunt sequi facilis laboriosam, nemo est officiis? Temporibus!
-            </p>
-        </section>
-        <!-- Portfolio Section - Rows of 3 uniquely styled cards -->
-        <section id="work">
-            <h2>Work</h2>
-            <div id="work-cards">
-                <div class="card card1"></div>
-                <div class="card card2"></div>
-                <div class="card card3"></div>
-                <div class="card card1"></div>
-                <div class="card card2"></div>
-                <div class="card card3"></div>
+        <header>
+            <div id="photo-name">
+                <img id="profile-photo" alt="A photo of Katy" src="./assets/katy-profile.jpg" width="300px" height="auto">
+                <h1>Katy Thompson</h1>
             </div>
-        </section>
-        <!-- Contact Section - ______ -->
-        <section id="contact">
-            <h2>Contact</h2>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; Copyright 2023, Katy Thompson</p>
-    </footer>
+        </header>
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    Hi, I'm Katy! I've been working in the tech industry for about 7 years now. Over this time I've worn multiple hats, the projects I've worked on have required me to be a project manager, front-end developer, UX consultant, designer, strategist, data analyst and account manager. I love creating beautiful and useful things, and get deep satisfaction out of working out how to do something from first principles. Over the years I’ve done deep-dives into front-end coding, SQL so I can play with databases, typeface design, book binding, how to fit-out a camper van, and lots of other creative pursuits. Currently I'm completing a Full-Stack Coding bootcamp.
+                </p>
+                <p>
+                    Over my professional life, I've collaborated closely with talented teams of developers and designers on website and microsite projects for renowned Australian and global brands like Sydney Symphony Orchestra, Bega, Mars, Fitness First, Warner Music, and more. The projects I've worked on, and the people I've worked with have taught me a lot about what good design is. How to create something that's not just aesthetically delightful, but that is designed around a deep understanding of the user and their needs.  
+                </p>
+                <p>
+                    This website is a place for me to document my personal projects and explorations. I'll be adding to it more and more as I work through my Coding bootcamp.
+                </p>
+            </section>
+            <!-- Portfolio Section - Rows of 3 uniquely styled cards -->
+            <section id="work">
+                <h2>Work</h2>
+                <div id="work-cards">
+                    <a class="card" id="card1" href="" target="_blank">
+                        <h3>Horiseon Code Refactor</h3>
+                        <div id="image1"></div>
+                        <h4>HTML / CSS</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi modi, provident cupiditate id neque sapiente nostrum recusandae officia reiciendis ipsum enim eum aliquid, dolorem vitae dolor nam doloribus, quisquam quae.</p>
+                    </a>
+                    <a class="card" id="card2" href="https://www.myfonts.com/collections/evie-sans-font-ktstudio" target="_blank">
+                        <h3>Evie Sans Font</h3>
+                        <div id="image2"></div>
+                        <h4>Glyphs</h4>
+                        <p>Evie Sans was developed in 2020 as a typeface to be used for my customisable planner / diary company PLANNER.STUDIO. The fonts have geometric proportions and subtle Art Deco influences in several of the uppercase characters, including a lowered crossbar on the H, lowered middle arm on the F and deepened bowl on the P.
+                        </p>
+                    </a>
+                    <a class="card" id="card3" href="#" target="_blank">
+                        <h3>Project 3</h3>
+                        <div id="image3"></div>
+                        <h4>HTML / CSS / JS</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum natus id amet temporibus assumenda facilis, enim sint tempore? Illum ullam amet repellat quae quibusdam id molestiae, ipsam doloremque quisquam error.</p>
+                    </a>
+                    <a class="card" id="card4" href="" target="_blank">
+                        <h3>Project 4</h3>
+                        <div id="image4"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae voluptates beatae quaerat, commodi dolore quia perspiciatis doloremque enim alias qui dicta praesentium? Distinctio hic ratione dolorum molestiae ducimus impedit inventore.</p>
+                    </a>
+                    <a class="card" id="card5" href="" target="_blank">
+                        <h3>Project 5</h3>
+                        <div id="image5"></div>
+                        <h4>HTML / CSS / JS</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto quia recusandae et. Aliquam illum, veritatis deleniti magni corporis quia iure incidunt voluptatibus recusandae, labore similique? Magnam ex excepturi esse?</p>
+                    </a>
+                </div>
+            </section>
+            <!-- Contact Section - ______ -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-links">
+                    <div class="contact-items" id="email">
+                        <img src="./assets/email.png" alt="email" class="icon" width="50px" height="auto">
+                        <a href="mailto:katyjmt@gmail.com">katyjmt@gmail.com</a>
+                    </div>
+                    <div class="contact-items" id="linkedin">
+                        <img src="./assets/linkedin.png" alt="email" class="icon" width="50px" height="auto">
+                        <a href="https://www.linkedin.com/in/katy-thompson/">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Copyright 2023, Katy Thompson</p>
+        </footer>
+    </div>
 </body>
 </html>

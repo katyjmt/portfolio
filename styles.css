@@ -1,0 +1,316 @@
+/* Base Variable Styles */
+:root {
+    --header-font: _____;
+    --body-font: _____;
+    --primary-colour: 250, 128, 114;
+    --secondary-colour: 255, 215, 0;
+    --tertiary-colour: 78, 71, 255;
+    --neutral-colour: 255, 255, 250;
+    --container-width: 85%;
+}
+
+/* Base Element Styles */
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+nav ul, main, #photo-name {
+    max-width: var(--container-width);
+    margin: auto;
+}
+
+
+h1,h2,h3,h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+h1 {
+    font-size: 45pt;
+    display: inline;
+}
+
+h2 {
+    font-size: 32pt;
+    padding: 0px 0px 40px 0px;
+}
+
+h3 {
+    font-size: 22pt;
+}
+
+h4 {
+    font-size: 18pt;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Background Gradients */
+.radial-gradient {
+    z-index: -1;
+    position: fixed;
+}
+
+#gradient1 {
+    background-image: radial-gradient(rgba(var(--primary-colour),1), rgba(var(--primary-colour),0.8) 30%, rgba(var(--primary-colour),0.5) 50%, rgba(1,1,1,0%) 70%);
+    left: 200px;
+    top: 300px;
+    width: 1000px;
+    height: 1000px;
+}
+
+#gradient2 {
+    background-image: radial-gradient(rgba(var(--secondary-colour),1), rgba(var(--secondary-colour),0.8) 30%, rgba(var(--secondary-colour),0.5) 50%, rgba(1,1,1,0%) 70%);
+    left: 700px;
+    top: 0px;
+    width: 850px;
+    height: 850px;
+}
+
+#gradient3 {
+    background-image: radial-gradient(rgba(var(--tertiary-colour),1), rgba(var(--tertiary-colour),0.8) 30%, rgba(var(--tertiary-colour),0.5) 50%, rgba(1,1,1,0%) 70%);
+    right: -300px;
+    top: 700px;
+    width: 1200px;
+    height: 1200px;
+}
+
+/* Top Nav */
+
+nav {
+    padding: 30px 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 3;
+    top: 0px;
+    /* background-color: rgb(var(--neutral-colour)); */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+nav ul li {
+    padding: 0px 0px 0px 50px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: 4px solid rgb(var(--primary-colour));
+}
+
+nav a:visited {
+    color: black;
+}
+
+/* Header */
+
+#photo-name {
+    min-height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#profile-photo {
+    object-fit: cover;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+/* Main section styling */
+
+section { 
+    margin-bottom: 100px;
+}
+
+
+/* Card Styling */
+
+#work {
+    width: 100%;
+}
+
+#work-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+}
+
+#work-cards a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    width: 30%;
+    margin: 0px 50px 70px 0px;
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.card h3 {
+    background: rgb(var(--primary-colour));
+}
+
+.card h3, .card p {
+    padding: 15px 20px;
+}
+
+.card div {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(var(--neutral-colour));
+    background-size: cover;
+    background-position: center;
+}
+
+.card h4 {
+    width: 30%;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: rgb(var(--secondary-colour));
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 2;
+    line-height: 1.2;
+}
+
+#card1 {
+    width: 50%;
+}
+
+#card1 div {
+    height: 500px;
+    background-image: url("./assets/horiseon.png");
+}
+
+#card2 div {
+    background-image: url("./assets/Evie-Sans-Font.png");
+}
+
+#card3 div {
+    background-image: url("./assets/eugene-chystiakov-aOyeqxTI9Ms-unsplash.jpg");
+}
+
+#card4 div {
+    background-image: url("./assets/hanna-balan-oWgFZdSZPNo-unsplash.jpg");
+}
+
+#card5 div {
+    background-image: url("./assets/mohamed-nohassi-QY4j37I6lRc-unsplash.jpg");
+}
+
+/* Contact Links */
+
+.contact-links, .contact-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-items {
+    margin-right: 40px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: rgb(var(--tertiary-colour));
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: rgb(var(--neutral-colour));
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer p {
+    font-size: 16px;
+    width: var(--container-width);
+    margin:auto;
+    display: block;
+}
+
+/* Breakpoints */
+
+/* Two cards per row on screens <1600px */
+@media screen and (max-width: 1600px) {
+    .card {
+        width: 45%;
+    }
+}
+
+/* One card per row for screens <992px*/
+@media screen and (max-width: 992px) {
+    .card {
+        width: 90%;
+    }
+}
+
+/* Adjust font sizes of large headings on tablet and below */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 34pt;
+    }
+
+    h2 {
+        font-size: 28pt;
+    }
+}
+
+/* Adjust positioning / sizing of project type overlay cards */
+@media screen and (max-width: 500px) {
+    .card h4 {
+        top: 50px;
+        width: 70%;
+        font-size: 14pt;
+    }
+
+    #gradient1 {
+        background-image: radial-gradient(rgba(var(--primary-colour),1), rgba(var(--primary-colour),0.8) 30%, rgba(var(--primary-colour),0.5) 50%, rgba(1,1,1,0%) 70%);
+        left: 200px;
+        top: 0px;
+        width: 1000px;
+        height: 1000px;
+    }
+    
+    #gradient2 {
+        background-image: radial-gradient(rgba(var(--secondary-colour),1), rgba(var(--secondary-colour),0.8) 30%, rgba(var(--secondary-colour),0.5) 50%, rgba(1,1,1,0%) 70%);
+        left: 200px;
+        top: 700px;
+        width: 850px;
+        height: 850px;
+    }
+    
+    #gradient3 {
+        background-image: radial-gradient(rgba(var(--tertiary-colour),1), rgba(var(--tertiary-colour),0.8) 30%, rgba(var(--tertiary-colour),0.5) 50%, rgba(1,1,1,0%) 70%);
+        right: 100px;
+        top: 300px;
+        width: 1000px;
+        height: 1000px;
+    }
+}

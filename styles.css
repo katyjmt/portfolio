@@ -105,6 +105,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
+    color: rgb(var(--tertiary-colour));
 }
 
 nav a:hover {
@@ -182,7 +183,7 @@ section {
 }
 
 .card h4 {
-    width: 30%;
+    width: 40%;
     text-align: center;
     padding: 10px 10px;
     background-color: rgb(var(--secondary-colour));

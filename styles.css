@@ -25,6 +25,7 @@ nav ul, main, #photo-name {
 h1,h2,h3,h4 {
     text-transform: uppercase;
     letter-spacing: 0.15em;
+    line-height: 1.2;
 }
 
 h1 {
@@ -177,6 +178,7 @@ section {
     background-color: rgb(var(--neutral-colour));
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .card h4 {
@@ -186,7 +188,7 @@ section {
     background-color: rgb(var(--secondary-colour));
     position: absolute;
     right: 30px;
-    top: 30px;
+    top: -15px;
     z-index: 2;
     line-height: 1.2;
 }
@@ -268,7 +270,9 @@ footer p {
 @media screen and (max-width: 992px) {
     .card {
         width: 90%;
+        margin: 0px;
     }
+
 }
 
 /* Adjust font sizes of large headings on tablet and below */
@@ -279,15 +283,6 @@ footer p {
 
     h2 {
         font-size: 28pt;
-    }
-}
-
-/* Adjust positioning / sizing of project type overlay cards */
-@media screen and (max-width: 500px) {
-    .card h4 {
-        top: 50px;
-        width: 70%;
-        font-size: 14pt;
     }
 
     #gradient1 {
@@ -313,4 +308,27 @@ footer p {
         width: 1000px;
         height: 1000px;
     }
+}
+
+/* Adjust positioning / sizing of project type overlay cards */
+@media screen and (max-width: 500px) {
+    #photo-name, #work-cards {
+        display: block;
+    }
+
+    #profile-photo {
+        margin-bottom: 20px;
+    }
+    
+    .card h4 {
+        top: 0px;
+        right: 0px;
+        width: 70%;
+        font-size: 14pt;
+    }
+
+    h1 {
+        font-size: 28pt;
+    }
+
 }

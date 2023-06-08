@@ -336,6 +336,7 @@ footer p {
 
     h2 {
         font-size: 24pt;
+        padding-top: 0px;
     }
 
     h3 {
@@ -349,5 +350,5 @@ footer p {
     .contact-items {
         margin-bottom: 20px;
     }
-    
+
 }

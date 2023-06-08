@@ -350,4 +350,9 @@ footer p {
         margin-bottom: 20px;
     }
 
+    #profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
 }

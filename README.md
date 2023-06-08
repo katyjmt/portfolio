@@ -1,10 +1,13 @@
 # Portfolio Website
 
 ## Description
-A portfolio website to house links to Katy Thompson's Github respositories and other creative work.
+A portfolio website to house links to my Github respositories and other creative work.
 
 ## Website Link
+[Link to website](https://katyjmt.github.io/week2-challenge-portfolio/)
 
+## Screenshot
+![Screenshot of the website](./assets/katy-portfolio-screenshot.png)
 
 ## License
 MIT License
